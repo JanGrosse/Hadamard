@@ -1,1 +1,1 @@
-# Hadamard
+# HadamardMatrix

@@ -40,12 +40,12 @@ public enum ConnectDatabase {
 
     public void dropTables() {
         System.out.println("--- dropTable dataset");
-        update("DROP TABLE Hadamard");
+        update("DROP TABLE HadamardMatrix");
     }
 
     public void createTables() {
         System.out.println("--- createTable dataSet");
-        String statement = "CREATE TABLE Hadamard(" +
+        String statement = "CREATE TABLE HadamardMatrix(" +
                 "id INTEGER IDENTITY PRIMARY KEY," +
                 "hadamardNumber INTEGER NOT NULL," +
                 "sequence LONGVARCHAR NOT NULL);";
@@ -54,7 +54,7 @@ public enum ConnectDatabase {
 
 
     public void addData(int hadaNumber, String data) {
-        String statement = "INSERT INTO Hadamard(hadamardNumber, sequence) VALUES ('" + hadaNumber + "','"+ data + "');";
+        String statement = "INSERT INTO HadamardMatrix(hadamardNumber, sequence) VALUES ('" + hadaNumber + "','"+ data + "');";
         System.out.println(statement);
         update(statement);
     }

@@ -13,12 +13,19 @@ public class WalishMatrix implements Runnable {
         this.size = powerOf;
     }
 
+    public boolean[][] getWalishMatrix(){
+        return walishMatrix;
+    }
     public void setBarriers(CyclicBarrier barrier){
         this.barrier = barrier;
     }
+
+
     public int getSize(){
         return this.size;
     }
+
+
     private boolean[][] createWalishMatrix(int size){
         // The "standard" Hadamarad-Matrix with only one Item is just one single true H(1) = | * |
         if(size <= 0){

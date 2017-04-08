@@ -2,6 +2,7 @@
  * Created by Filip on 04.04.2017.
  */
 public class MatrixPrint {
+    // Simple help class to outsource the printing
     public MatrixPrint(){
 
     }
